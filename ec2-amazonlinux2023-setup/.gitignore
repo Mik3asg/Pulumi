@@ -1,2 +1,18 @@
+# Ignore Python bytecode files that are automatically generated during execution.
 *.pyc
+
+# Ignore Python cache directories that store compiled bytecode files.
+__pycache__/
+
+# Ignore macOS-specific system files that store metadata and should not be committed.
+.DS_Store
+
+# Ignore the Python virtual environment directory, which contains environment-specific dependencies.
 venv/
+
+# Ignore backup files automatically created by Pulumi for each stack's configuration file.
+Pulumi.<stack>.yaml.bak
+
+# Ignore encrypted Pulumi stack secret files, which contain sensitive information like API keys.
+Pulumi.<stack>.yaml.secrets
+
